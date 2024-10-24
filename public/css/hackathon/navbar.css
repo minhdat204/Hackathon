@@ -1,0 +1,28 @@
+.navbar-hidden {
+    transform: translateY(-100%) !important;
+    transition: transform 0.3s ease-in-out !important;
+    opacity: 0;
+    /* Ẩn mờ dần */
+}
+
+.navbar-visible {
+    transform: translateY(0) !important;
+    transition: transform 0.3s ease-in-out !important;
+    opacity: 1;
+}
+
+.navbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    /* Đảm bảo nó nằm trên các phần tử khác */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out !important;
+    /* Thêm hiệu ứng ẩn hiện */
+
+
+}
+
+.navbarCustom {
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+}

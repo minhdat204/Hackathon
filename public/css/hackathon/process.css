@@ -1,0 +1,85 @@
+/* Process Block Customization lich trinh*/
+/* Hiệu ứng mượt mà cho quá trình chuyển */
+.process-step {
+    border: 2px solid #ddd;
+    border-radius: 45px;
+    padding: 30px 40px;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.process-step:hover {
+    background-color: #f0f8ff;
+    /* Màu nền thay đổi khi hover */
+    transform: scale(1.02);
+    /* Tăng nhẹ kích thước khi hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Hiệu ứng đổ bóng */
+}
+
+.active-step {
+    background-color: #ccff66;
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Thêm hiệu ứng đổ bóng khi đang mở */
+}
+
+.step-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.step-title {
+    font-size: 25px;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-left: 10px;
+    color: #333;
+}
+
+.step-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.step-description {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 400;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.process-step.active-step .step-description {
+    display: block;
+    opacity: 1;
+    max-height: 1000px;
+    /* Đủ lớn để hiển thị toàn bộ nội dung */
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn.active {
+    transform: rotate(180deg);
+    /* Xoay biểu tượng khi mở */
+}
+
+.step-small {
+    font-weight: 500;
+}

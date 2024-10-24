@@ -1,0 +1,104 @@
+/* testimonial */
+/* Tổng quan */
+.testimonials-block {
+    background: linear-gradient(135deg, #686868 0%, #000000 100%) !important;
+    color: #ffffff;
+    padding: 3rem 0;
+    border-radius: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #80ff00;
+}
+
+.testimonials-subtitle {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin: 0 auto;
+}
+
+/* Testimonial card */
+.card {
+    background-color: #222;
+    border: none;
+    border-radius: 45px !important;
+    text-align: center;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 255, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.testimonial-text::before {
+    font-size: 3rem;
+    color: #80ff00;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+.testimonial-author {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Swiper styling */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #80ff00 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #80ff00 !important;
+}
+
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
