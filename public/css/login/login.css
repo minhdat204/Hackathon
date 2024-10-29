@@ -153,3 +153,27 @@ img {
     height: auto;
     /* Maintain aspect ratio */
 }
+/*thông báo lỗi đẹp mắt*/
+.error-message {
+    color: red!important;
+    font-size: 0.80em!important;
+    margin-top: 5px!important;
+    display: block!important;
+}
+
+/*link chuyển hướng register*/
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #19ce1c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+

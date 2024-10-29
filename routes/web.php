@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 //trang chinh
 Route::get('/', [AuthController::class, 'showLogin'])->name('showlogin');
 Route::Post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/register', [AuthController::class, 'showRegister'])->name('showregister');
+Route::post('/register', [AuthController::class, 'register'])->name('register');
 //sau khi dang nhap
 Route::middleware(['auth'])->group(function () {
     Route::get('/hackathon', [HackathonController::class, 'index'])->name('hackathon');

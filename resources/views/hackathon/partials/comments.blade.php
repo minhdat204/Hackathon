@@ -32,7 +32,7 @@
         </div>
 
         <!-- Nút xem thêm bình luận -->
-        @if (count($comments) == 1)
+        @if (count($comments) == 5)
             <div class="text-center">
                 <button id="loadMoreComments" class="btn btn-secondary mt-3">Xem thêm</button>
 
