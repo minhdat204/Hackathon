@@ -15,7 +15,7 @@ PHP: >= 8.0
 Composer: >= 2.0
 Node.js: >= 12.x (for Laravel Mix)
 Database: MySQL or any other database supported by Laravel
-Getting Started
+## Getting Started
 1. Clone the repository
 git clone https://github.com/minhdat204/hackathon.git
 cd yourproject
