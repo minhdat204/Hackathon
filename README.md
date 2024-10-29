@@ -25,14 +25,16 @@ The Hackathon_CDTH22WEBB project includes several key features that enhance user
 
 1. **User Authentication**:
    - Users must log in to access the application. This ensures that personal data and interactions are secure.
-
-2. **Home Page**:
+2. **User Registration:**
+    - Sign-up form includes fields like Username, Password, Confirm Password, Name, Birthday.
+    - Access to core app features after successful registration.
+3. **Home Page**:
    - After successful login, users are directed to the home page, which includes the following features:
      - **Comments Section**: Users can leave comments, enabling discussions and feedback on various topics.
      - **Voting Button**: Users can participate in polls or votes, contributing to decision-making processes or preferences.
      - **Logout Option**: Users can easily log out of their accounts when they finish their session.
 
-3. **User Profile Management**:
+4. **User Profile Management**:
    - A dedicated section for users to update their personal information, ensuring that their profiles are current and accurate. This feature enhances user experience by allowing personalization and easy management of user details.
 
 Feel free to explore the application and take advantage of these features!
