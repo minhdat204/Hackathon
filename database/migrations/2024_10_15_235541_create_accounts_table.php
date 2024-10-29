@@ -12,14 +12,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('accounts', function (Blueprint $table) {
-            $table->id();
-            $table->string('username');
-            $table->string('password');
-            $table->string('name');
-            $table->date('birthdate')->nullable();
-            $table->string('img')->nullable();
-            $table->int('isLike')->default(0);
-            $table->int('status')->default(1);
+            $table->bigIncrements('id');
+            $table->string('username', 255);
+            $table->string('password', 255);
+            $table->string('name', 255);
+            $table->date('bridthday')->nullable();
+            $table->string('img', 255)->nullable();
+            $table->integer('islike')->default(0);
+            $table->integer('status')->default(1);
             $table->timestamps();
         });
     }
