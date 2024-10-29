@@ -19,16 +19,30 @@
     </a>
 </p>
 
-## Laravel Project
+## Project Features
 
-This is a Laravel project designed to [describe the purpose of your project, e.g., manage a system, provide an API, etc.]. It is built on the Laravel framework and includes essential CRUD operations, authentication, and other functionalities to support [the project's specific goal].
+The Hackathon_CDTH22WEBB project includes several key features that enhance user interaction and functionality:
+
+1. **User Authentication**:
+   - Users must log in to access the application. This ensures that personal data and interactions are secure.
+
+2. **Home Page**:
+   - After successful login, users are directed to the home page, which includes the following features:
+     - **Comments Section**: Users can leave comments, enabling discussions and feedback on various topics.
+     - **Voting Button**: Users can participate in polls or votes, contributing to decision-making processes or preferences.
+     - **Logout Option**: Users can easily log out of their accounts when they finish their session.
+
+3. **User Profile Management**:
+   - A dedicated section for users to update their personal information, ensuring that their profiles are current and accurate. This feature enhances user experience by allowing personalization and easy management of user details.
+
+Feel free to explore the application and take advantage of these features!
 
 ## Requirements
 
 - **PHP:** >= 8.0
 - **Composer:** >= 2.0
 - **Node.js:** >= 12.x (for Laravel Mix)
-- **Database:** MySQL or any other database supported by Laravel
+- **Database:** MySQL
 
 ## Getting Started
 
