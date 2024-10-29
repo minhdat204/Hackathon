@@ -38,3 +38,25 @@ Follow these steps to set up the project locally:
    ```bash
    git clone https://github.com/minhdat204/hackathon.git
    cd hackathon
+2. **Install dependencies**
+   ```bash
+   composer install
+3. **Copy the .env file Create a copy of the .env.example file and rename it to .env:**
+    ```bash
+   cp .env.example .env
+4. **Generate application key**
+    ```bash
+   php artisan key:generate
+5. **Run migrations Create the database tables by running migrations:**
+    ```bash
+    php artisan migrate
+    php artisan db:seed
+6. **Install Node.js dependencies (optional)**
+    ```bash
+    npm install
+    npm run dev
+7. **Serve the application Start the Laravel development server:**
+    ```bash
+    php artisan serve
+Then, visit http://localhost:8000 to view the application.
+
